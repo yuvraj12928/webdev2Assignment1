@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text"><h2>Add New Event</h2></div>
+      <div class="eventform"></div>
+      <form class="form">
+        <label for="eventTitle">Event Title</label>
+        <input type="text" id="eventTitle" name="eventTitle" />
+        <br />
+        <br />
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" />
+        <br />
+        <br />
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+          <option value="Conference">Conference</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Meetup">Meetup</option>
+          <option value="Webinar">Webinar</option>
+          <option value="Social">Social</option>
+        </select>
+        <br />
+        <br />
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+        <br />
+        <br />
+        <input class="btn" type="submit" value="Add Event" />
+      </form>
+      <div class="events">
+        <button class="clearall">Clear all Event</button>
+        <button class="sample">Add sample Event</button>
+        <div class="cards"></div>
+      </div>
+      <div class="domContainer">
+       <div class="dom-demo">
+  <h3>DOM Manipulation Demo</h3>
+
+  <div class="dom-box">
+    <p><strong>innerText vs innerHTML vs textContent</strong></p>
+
+    <p><strong>Original HTML:</strong> &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces</p>
+    <p><strong>innerHTML:</strong> Renders HTML tags → <strong>Bold Text</strong> with spaces</p>
+    <p><strong>innerText:</strong> Removes HTML, collapses spaces → Bold Text with spaces</p>
+    <p><strong>textContent:</strong> Removes HTML, keeps spaces → Bold Text with spaces</p>
+
+    <p id="keyOutput" class="key-text">You pressed: None</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
